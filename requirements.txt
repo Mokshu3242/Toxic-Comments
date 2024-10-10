@@ -1,7 +1,6 @@
+setuptools>=67.0.0
 Flask==3.0.3
 scikit-learn==1.5.2
 pandas==2.2.3
 numpy==1.23.5  # Ensure compatibility with Python 3.12
 nltk==3.9.1
-setuptools
-wheel

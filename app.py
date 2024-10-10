@@ -23,7 +23,7 @@ app = Flask(__name__)
 # Helper function to preprocess text
 def prepare_text(text):
     wordnet_lemmatizer = WordNetLemmatizer()
-    
+
     def get_wordnet_pos(treebank_tag):
         if treebank_tag.startswith('J'):
             return wordnet.ADJ
@@ -41,7 +41,7 @@ def prepare_text(text):
     text = ' '.join(text)
     text = word_tokenize(text)
     text = pos_tag(text)
-    
+
     lemma = [wordnet_lemmatizer.lemmatize(i[0], pos=get_wordnet_pos(i[1])) for i in text]
     return ' '.join(lemma)
 
@@ -61,5 +61,8 @@ def index():
 
     return render_template('index.html', result=result)
 
+# Vercel requires the app to be callable as a module
+# Expose the app to Vercel
 if __name__ == '__main__':
     app.run(debug=True)
+

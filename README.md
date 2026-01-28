@@ -21,8 +21,7 @@ The Toxic Comments Classification project is a Flask-based web application that 
 * Flask, Scikit-learn, and NLTK libraries
 
 #### Steps
-* Clone the repository:
-git clone https://github.com/Mokshu3242/toxic-comments-classification.git
+* Clone the repository
 * Navigate to the project directory:
 cd toxic-comments-classification
 * Install the dependencies:

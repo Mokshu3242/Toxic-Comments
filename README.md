@@ -22,7 +22,7 @@ The Toxic Comments Classification project is a Flask-based web application that 
 
 #### Steps
 * Clone the repository:
-git clone https://github.com/yourusername/toxic-comments-classification.git
+git clone https://github.com/Mokshu3242/toxic-comments-classification.git
 * Navigate to the project directory:
 cd toxic-comments-classification
 * Install the dependencies:
